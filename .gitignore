@@ -1,0 +1,17 @@
+node_modules/
+dist/
+.vite/
+.vercel/
+.cache/
+.parcel-cache/
+coverage/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.DS_Store
+Thumbs.db
+*.local
+.env
+.env.*
+!.env.example
