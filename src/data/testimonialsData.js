@@ -1,13 +1,13 @@
 export const testimonials = [
   {
-    name: 'Amelia Brooks',
+    name: 'Aarohi Mehta',
     role: 'Bridal Client',
     rating: 5,
     quote: 'The team created the calmest wedding morning. My makeup lasted all day and still looked soft in every photograph.',
     image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=500&q=85',
   },
   {
-    name: 'Sofia Martinez',
+    name: 'Ananya Reddy',
     role: 'Hair Color Client',
     rating: 5,
     quote: 'My balayage is dimensional, glossy, and exactly the tone I asked for. The consultation felt genuinely premium.',
@@ -21,7 +21,7 @@ export const testimonials = [
     image: 'https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=500&q=85',
   },
   {
-    name: 'Nora Ellis',
+    name: 'Neha Verma',
     role: 'Facial Client',
     rating: 5,
     quote: 'The facial changed my skin texture within a week. I appreciated the clear aftercare and no-pressure recommendations.',

@@ -4,6 +4,8 @@ import Button from '../components/common/Button.jsx';
 import SectionHeading from '../components/common/SectionHeading.jsx';
 import { salonImages } from '../assets/images/index.js';
 
+const whatsappLink = 'https://wa.me/919887442586';
+
 export default function Contact() {
   return (
     <>
@@ -29,13 +31,15 @@ export default function Contact() {
               </p>
               <p className="flex min-w-0 gap-3">
                 <Phone className="mt-1 shrink-0 text-gold" size={22} />
-                <span className="min-w-0 break-words">+1 (555) 014-8899</span>
+                <span className="min-w-0 break-words">+91 98874 42586</span>
               </p>
               <p className="flex min-w-0 flex-wrap items-center gap-x-3 gap-y-2">
                 <FaInstagram className="shrink-0 text-gold" />
                 <span className="min-w-0 break-all">@relaxluxurysalon</span>
                 <FaFacebookF className="shrink-0 text-gold" />
-                <FaWhatsapp className="shrink-0 text-gold" />
+                <a aria-label="Chat on WhatsApp" href={whatsappLink} rel="noopener noreferrer" target="_blank">
+                  <FaWhatsapp className="shrink-0 text-gold" />
+                </a>
               </p>
             </div>
           </div>

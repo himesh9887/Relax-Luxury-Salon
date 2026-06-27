@@ -4,6 +4,11 @@ import { Link } from 'react-router-dom';
 
 const quickLinks = ['Home', 'About', 'Services', 'Gallery', 'Pricing', 'Contact'];
 const services = ['Hair Styling', 'Hair Spa', 'Facial', 'Makeup'];
+const socialLinks = [
+  { Icon: FaInstagram, label: 'Instagram profile', href: 'https://instagram.com' },
+  { Icon: FaFacebookF, label: 'Facebook profile', href: 'https://facebook.com' },
+  { Icon: FaWhatsapp, label: 'Chat on WhatsApp', href: 'https://wa.me/919887442586' },
+];
 
 export default function Footer() {
   return (
@@ -15,8 +20,8 @@ export default function Footer() {
             A polished destination for beautiful hair, radiant skin, refined makeup, and deeply restorative spa rituals.
           </p>
           <div className="mt-6 flex gap-3">
-            {[FaInstagram, FaFacebookF, FaWhatsapp].map((Icon, index) => (
-              <a className="grid h-10 w-10 place-items-center rounded-full border border-white/15 text-gold hover:bg-white/10" href="https://instagram.com" key={index} aria-label="Social profile">
+            {socialLinks.map(({ Icon, label, href }) => (
+              <a className="grid h-10 w-10 place-items-center rounded-full border border-white/15 text-gold hover:bg-white/10" href={href} key={label} aria-label={label} rel="noopener noreferrer" target="_blank">
                 <Icon size={19} />
               </a>
             ))}
@@ -46,7 +51,7 @@ export default function Footer() {
           <div className="grid gap-4 text-white/72">
             <p className="flex min-w-0 gap-3"><MapPin className="mt-1 shrink-0 text-gold" size={18} /> <span className="min-w-0 break-words">28 Aurelia Avenue, Beverly Hills, CA</span></p>
             <p className="flex min-w-0 gap-3"><Mail className="mt-1 shrink-0 text-gold" size={18} /> <span className="min-w-0 break-all">hello@relaxluxurysalon.com</span></p>
-            <p className="flex min-w-0 gap-3"><Phone className="mt-1 shrink-0 text-gold" size={18} /> <span className="min-w-0 break-words">+1 (555) 014-8899</span></p>
+            <p className="flex min-w-0 gap-3"><Phone className="mt-1 shrink-0 text-gold" size={18} /> <span className="min-w-0 break-words">+91 98874 42586</span></p>
           </div>
         </div>
       </div>
